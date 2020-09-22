@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wedmeplz-test/static/css/main.fc92dd70.chunk.css",
-    "main.js": "/wedmeplz-test/static/js/main.cb86150a.chunk.js",
-    "main.js.map": "/wedmeplz-test/static/js/main.cb86150a.chunk.js.map",
+    "main.js": "/wedmeplz-test/static/js/main.36d55689.chunk.js",
+    "main.js.map": "/wedmeplz-test/static/js/main.36d55689.chunk.js.map",
     "runtime-main.js": "/wedmeplz-test/static/js/runtime-main.706fa325.js",
     "runtime-main.js.map": "/wedmeplz-test/static/js/runtime-main.706fa325.js.map",
     "static/js/2.8be6a9dd.chunk.js": "/wedmeplz-test/static/js/2.8be6a9dd.chunk.js",
     "static/js/2.8be6a9dd.chunk.js.map": "/wedmeplz-test/static/js/2.8be6a9dd.chunk.js.map",
     "index.html": "/wedmeplz-test/index.html",
-    "precache-manifest.8f3e3fc76772e0685c69b53cae46c8fd.js": "/wedmeplz-test/precache-manifest.8f3e3fc76772e0685c69b53cae46c8fd.js",
+    "precache-manifest.1809e1991914cca37e756d97426df6d4.js": "/wedmeplz-test/precache-manifest.1809e1991914cca37e756d97426df6d4.js",
     "service-worker.js": "/wedmeplz-test/service-worker.js",
     "static/css/main.fc92dd70.chunk.css.map": "/wedmeplz-test/static/css/main.fc92dd70.chunk.css.map",
     "static/js/2.8be6a9dd.chunk.js.LICENSE.txt": "/wedmeplz-test/static/js/2.8be6a9dd.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.706fa325.js",
     "static/js/2.8be6a9dd.chunk.js",
     "static/css/main.fc92dd70.chunk.css",
-    "static/js/main.cb86150a.chunk.js"
+    "static/js/main.36d55689.chunk.js"
   ]
 }
