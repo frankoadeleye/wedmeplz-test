@@ -18,6 +18,7 @@ export const SidebarIconContainer = styled.div`
   padding-left: 0.5rem;
   opacity: 0.95;
   height: 3.3rem;
+  top: 0;
   transition: height 0.3s;
   -webkit-box-shadow: 0 8px 9px -9px grey;
   -moz-box-shadow: 0 8px 9px -9px grey;
