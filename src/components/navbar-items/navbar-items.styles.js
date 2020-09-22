@@ -31,7 +31,8 @@ export const NavbarItemsBlock = styled.div`
   .item:nth-child(4),
   .item:nth-child(5),
   .item:nth-child(6),
-  button {
+  button,
+  span {
     transform: translateY(-30rem);
     animation: slideIn 1s forwards;
   }
@@ -59,6 +60,11 @@ export const NavbarItemsBlock = styled.div`
   .item:nth-child(6) {
     animation-delay: 0.12s;
   }
+
+  span {
+    animation-delay: 0.16s;
+  }
+
   button {
     animation-delay: 0.16s;
     font-size: 0.9rem;

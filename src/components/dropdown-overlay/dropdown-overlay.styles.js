@@ -10,6 +10,7 @@ export const DropDownBlock = styled.div`
   background-color: white;
   justify-content: space-between;
   left: 10%;
+  z-index: 2;
 
   .overlay-section {
     width: 22%;

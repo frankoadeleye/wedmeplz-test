@@ -15,8 +15,8 @@ export function Navbar({ children, showGenDropDown, hideGenDropdown }) {
         onMouseLeave={hideGenDropdown}
       >
         {children}
+        <SearchIcon />
       </NavbarItems>
-      <SearchIcon />
       <StyledLink to="/signin">
         <CustomButton text="log in" />
       </StyledLink>
