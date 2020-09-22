@@ -5,7 +5,7 @@ import SearchSharpIcon from "@material-ui/icons/SearchSharp";
 export const SearchIcon = () => {
   return (
     <SearchIconBlock>
-      <SearchSharpIcon fontSize="medium" />
+      <SearchSharpIcon fontSize="default" />
     </SearchIconBlock>
   );
 };
