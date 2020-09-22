@@ -7,14 +7,12 @@ export const DropDownBlock = styled.div`
   height: auto;
   display: flex;
   position: absolute;
-  // border: 1px solid red;
-  background-color: grey;
+  background-color: white;
   justify-content: space-between;
   left: 10%;
 
   .overlay-section {
     width: 22%;
     height: 20rem;
-    // border: 1px solid violet;
   }
 `;

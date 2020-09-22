@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavbarBlock = styled.div`
   display: none;
 
-  @media (min-width: 767px) {
+  @media (min-width: 777px) {
     display: flex;
     margin: 0;
     font-family: "Nunito Sans", sans-serif;
@@ -15,7 +15,6 @@ export const NavbarBlock = styled.div`
     align-items: center;
     font-weight: normal;
     background-color: rgb(231, 46, 119);
-    // border: 1px solid violet;
   }
 
   div:nth-child(2) {

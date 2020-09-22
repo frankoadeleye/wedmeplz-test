@@ -21,11 +21,10 @@ export const CustomButtonBlock = styled.div`
   padding: 0.5rem 0;
   border-radius: 15px;
   font-weight: bold;
-  // border: 1px solid blue;
 
   &:hover {
     color: #c6450cf2;
-    border: 1px solid #c6450cf2;
+    border: none;
     background-color: #ffffff;
     text-decoration: none;
   }

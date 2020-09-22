@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar } from "../navbar/navbar.component";
 import { LayoutBlock } from "./layout.styles";
 import {
@@ -7,16 +7,42 @@ import {
   PhotosDropDown,
   RealWedDropDown,
   BlogDropDown,
+  ShopDropDown,
 } from "../dropdowns/dropdowns";
 import NavbarItem from "../navbar-item/navbar-item.component";
+import Sidebar from "react-sidebar";
+import { HamburgerSideBar } from "../sidebar-menu/sidebar-menu.component";
+import { SidebarIcon } from "../sidebar-icon/sidebar-icon.component";
+import { sidebarStyles } from "../sidebar-styles";
+
+const mql = window.matchMedia(`(min-width: 777px)`);
 
 export function Layout({ children }) {
-  const [generalSeen, setGen] = React.useState(false);
-  const [venueSeen, setVenue] = React.useState(false);
-  const [vendorSeen, setVendorSeen] = React.useState(false);
-  const [photosSeen, setPhotos] = React.useState(false);
-  const [realWedSeen, setRealWed] = React.useState(false);
-  const [blogSeen, setBlog] = React.useState(false);
+  /* configuring hamburger sidebar menu to layout__________________ */
+  const [sidebarOpen, setSidebarState] = useState(false);
+  const [sidebarDocked, setSidebarDocked] = useState(mql.matches);
+  useEffect(() => {
+    mql.addEventListener("resize", mediaQueryChanged);
+
+    /*for cleanup, that is for unmounting: */
+    return mql.removeEventListener("resize", mediaQueryChanged);
+  }, []);
+  const mediaQueryChanged = () => {
+    setSidebarDocked(mql.matches);
+    setSidebarState(false);
+  };
+  const onSetSidebarOpen = (open) => {
+    setSidebarState(open);
+  };
+  /* _______________________________________________________________ */
+
+  const [generalSeen, setGen] = useState(false);
+  const [venueSeen, setVenue] = useState(false);
+  const [vendorSeen, setVendorSeen] = useState(false);
+  const [photosSeen, setPhotos] = useState(false);
+  const [realWedSeen, setRealWed] = useState(false);
+  const [blogSeen, setBlog] = useState(false);
+  const [shopSeen, setShop] = useState(false);
 
   const handleGenShow = () => {
     setGen(true);
@@ -58,6 +84,13 @@ export function Layout({ children }) {
   const handleBlogHide = () => {
     setBlog(false);
   };
+
+  const handleShopShow = () => {
+    setShop(true);
+  };
+  const handleShopHide = () => {
+    setShop(false);
+  };
   return (
     <LayoutBlock>
       <Navbar
@@ -95,19 +128,39 @@ export function Layout({ children }) {
           name="Blog"
         />
         <NavbarItem
-          /* auto_width */
           grow_width=""
           route="/intermediate-wedding"
           name="Intermediate Wedding"
         />
-        <NavbarItem route="/shop" name="Shop" />
+        <NavbarItem
+          showDropDown={true && handleShopShow}
+          hideDropDown={true && handleShopHide}
+          route="/shop"
+          name="Shop"
+        />
       </Navbar>
+      {/* ___________________________imported sidebar __________________ */}
+      <Sidebar
+        sidebar={<HamburgerSideBar onClick={() => setSidebarState(false)} />}
+        open={sidebarOpen}
+        onSetOpen={onSetSidebarOpen}
+        styles={{ ...sidebarStyles }}
+        touchHandleWidth={40}
+        shadow={true}
+      >
+        <SidebarIcon
+          show={sidebarOpen}
+          showShowSidebar={() => onSetSidebarOpen(true)}
+        />
+      </Sidebar>
+      {/* ________________________________________________________________*/}
       {generalSeen && <VenueDropDown />}
       {venueSeen && <VenueDropDown />}
       {vendorSeen && <VendorsDropDown />}
       {photosSeen && <PhotosDropDown />}
       {realWedSeen && <RealWedDropDown />}
       {blogSeen && <BlogDropDown />}
+      {shopSeen && <ShopDropDown />}
       {children}
     </LayoutBlock>
   );

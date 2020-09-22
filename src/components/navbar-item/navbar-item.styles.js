@@ -19,7 +19,6 @@ export const NavbarItemBlock = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
-  // border: 1px solid blue;
   flex-grow: ${(props) => (props.grow_width ? 2 : 1)};
 
   &:hover {

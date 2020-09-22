@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  // border: 1px solid powderblue;
-  margin-right: 2rem;
-  margin-left: 1rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+
+  @media (min-width: 1100px) {
+    margin-right: 2rem;
+    margin-left: 1rem;
+  }
 `;
 
 export const NavbarItemsBlock = styled.div`
@@ -19,7 +23,6 @@ export const NavbarItemsBlock = styled.div`
   margin: 0;
   list-style-type: none;
   text-decoration: 0;
-  // border: 1px solid pink;
 
   .is-active {
     border-bottom: 5px solid white;

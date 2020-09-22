@@ -4,6 +4,7 @@ import { VendorsPage } from "../../pages/vendors-page/vendors-page.component";
 import { PhotosPage } from "../../pages/photos-page/photos-page.component";
 import { RealWeddingsPage } from "../../pages/real-weddings-page/real-weddings-page.component";
 import { IntermediateWeddingPage } from "../../pages/intermediate-wedding-page/intermediate-wedding-page.component";
+import { LoginPage } from "../../pages/login-page/login-page.component";
 
 export const routes = [
   {
@@ -30,5 +31,9 @@ export const routes = [
   {
     path: "/intermediate-wedding",
     component: IntermediateWeddingPage,
+  },
+  {
+    path: "/signin",
+    component: LoginPage,
   },
 ];

@@ -1,5 +1,10 @@
 import React from "react";
+import { Banner } from "../../components/banner/banner.component";
 
 export function HomePage() {
-  return <h3>Home Page</h3>;
+  return (
+    <React.Fragment>
+      <Banner />
+    </React.Fragment>
+  );
 }
