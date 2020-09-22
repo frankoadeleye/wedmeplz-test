@@ -27,6 +27,12 @@ export const NavbarItemBlock = styled(NavLink)`
     ${(props) => props.showDropDown && true};
   }
 
+  @media (min-width: 1500px) {
+    height: 4.2rem;
+    &:hover {
+      border-bottom: 8px solid white;
+    }
+  }
   @media (min-width: 1600px) {
     font-size: 1.1rem;
   }

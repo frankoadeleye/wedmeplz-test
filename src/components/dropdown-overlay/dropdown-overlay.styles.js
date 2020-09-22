@@ -16,4 +16,7 @@ export const DropDownBlock = styled.div`
     width: 22%;
     height: 20rem;
   }
+  @media (min-width: 1500px) {
+    top: 5rem;
+  }
 `;

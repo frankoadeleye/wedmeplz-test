@@ -17,7 +17,7 @@ export const NavbarItemsBlock = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 70%;
-  height: auto;
+  height: 2.6rem;
   padding: 5px;
   padding: 0;
   margin: 0;
@@ -75,6 +75,9 @@ export const NavbarItemsBlock = styled.div`
     to {
       transform: translateX(0);
     }
+  }
+  @media (min-width: 1500px) {
+    height: 4.4rem;
   }
   @media (min-width: 1900px) {
     button {

@@ -15,6 +15,7 @@ export const NavbarBlock = styled.div`
     align-items: center;
     font-weight: normal;
     background-color: rgb(231, 46, 119);
+    // border: 2px solid blue;
   }
 
   div:nth-child(2) {
@@ -39,6 +40,6 @@ export const NavbarBlock = styled.div`
     }
   }
   @media (min-width: 1500px) {
-    padding: 2rem 0rem;
+    height: 4.9rem;
   }
 `;
