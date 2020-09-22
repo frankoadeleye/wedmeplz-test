@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wedmeplz-test/static/css/main.fc92dd70.chunk.css",
+    "main.js": "/wedmeplz-test/static/js/main.28e56dda.chunk.js",
+    "main.js.map": "/wedmeplz-test/static/js/main.28e56dda.chunk.js.map",
+    "runtime-main.js": "/wedmeplz-test/static/js/runtime-main.706fa325.js",
+    "runtime-main.js.map": "/wedmeplz-test/static/js/runtime-main.706fa325.js.map",
+    "static/js/2.8be6a9dd.chunk.js": "/wedmeplz-test/static/js/2.8be6a9dd.chunk.js",
+    "static/js/2.8be6a9dd.chunk.js.map": "/wedmeplz-test/static/js/2.8be6a9dd.chunk.js.map",
+    "index.html": "/wedmeplz-test/index.html",
+    "precache-manifest.d65901e6b27742d3e4ffc60c0b35a731.js": "/wedmeplz-test/precache-manifest.d65901e6b27742d3e4ffc60c0b35a731.js",
+    "service-worker.js": "/wedmeplz-test/service-worker.js",
+    "static/css/main.fc92dd70.chunk.css.map": "/wedmeplz-test/static/css/main.fc92dd70.chunk.css.map",
+    "static/js/2.8be6a9dd.chunk.js.LICENSE.txt": "/wedmeplz-test/static/js/2.8be6a9dd.chunk.js.LICENSE.txt",
+    "static/media/WMG-logo.svg": "/wedmeplz-test/static/media/WMG-logo.7b1e1765.svg",
+    "static/media/banner-img.webp": "/wedmeplz-test/static/media/banner-img.e93e8bd8.webp",
+    "static/media/search-icon.webp": "/wedmeplz-test/static/media/search-icon.320a9d7b.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.706fa325.js",
+    "static/js/2.8be6a9dd.chunk.js",
+    "static/css/main.fc92dd70.chunk.css",
+    "static/js/main.28e56dda.chunk.js"
+  ]
+}
