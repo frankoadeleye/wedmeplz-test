@@ -6,7 +6,7 @@ const { CompanyLogo } = Svg;
 
 export const Logo = () => {
   return (
-    <Link to="/">
+    <Link to="/wedmeplz-test">
       <LogoBlock>
         <img src={CompanyLogo} alt="" />
       </LogoBlock>
