@@ -9,7 +9,7 @@ import { VenuesPage } from "../../pages/venues-page/venues-page.component";
 
 export const routes = [
   {
-    path: "/",
+    path: "/wedmeplz-test",
     exact: true,
     component: HomePage,
   },
